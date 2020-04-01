@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname ,`client`)));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/budget`, {
+mongoose.connect(process.env.MONGODB_URI || `mmongodb://user21:MyPassword21@ds145295.mlab.com:45295/heroku_g1cxw7mf`, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
