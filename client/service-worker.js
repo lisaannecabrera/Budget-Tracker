@@ -5,11 +5,11 @@ console.log('Hi from your service-worker.js file!');
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
-  '/db.js',
-  '/index.js',
-  '/main.js',
+  '/assets/js/db.js',
+  '/assets/js/index.js',
+  '/assets/js/main.js',
   '/manifest.webmanifest',
-  'style.css'
+  '/assets/css/style.css'
 ];
 
 const CACHE_NAME = 'static-cache-v1';
