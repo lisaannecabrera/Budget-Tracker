@@ -11,7 +11,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <title>Budget Tracker</title>
   </head>
   <body>
@@ -53,10 +53,10 @@
     <script src="./assets/js/db.js"></script>
     <script src="./assets/js/index.js"></script>
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('service-worker.js').then(reg => {
-            console.log('We found your service worker file!', reg);
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("Service Worker registered!", reg);
           });
         });
       }
